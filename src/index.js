@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 export default class Tooltip extends Component {
   render() {
     return (
-      <h1>THIS IS WILL BE THE TOOLTIP ANCHOR</h1>)
+      <Fragment>
+        <h1>TOOLTIP ANCHOR</h1>
+        {this.props.children}
+      </Fragment>
+    );
   }
 }

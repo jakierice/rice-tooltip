@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.2.0",
     "react": "16.4.0",
     "react-dom": "16.4.0",
     "react-scripts": "2.1.1"
@@ -25,11 +26,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@storybook/react": "^4.0.12",
+    "@babel/core": "^7.2.0",
     "@storybook/addon-actions": "^4.0.12",
     "@storybook/addon-links": "^4.0.12",
     "@storybook/addons": "^4.0.12",
-    "@babel/core": "^7.2.0",
+    "@storybook/react": "^4.0.12",
     "babel-loader": "^8.0.4"
   }
 }
