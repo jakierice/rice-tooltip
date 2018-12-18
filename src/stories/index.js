@@ -1,19 +1,15 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import Tooltip from '../index';
+import Dialog from '../Dialog';
 
-import { Button, Welcome } from '@storybook/react/demo';
-
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+storiesOf('Tooltip', module).add('with text', () => (
+  <Tooltip>
+    <Dialog>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+      necessitatibus, voluptate esse ad, porro quidem qui voluptatem quam
+      numquam, neque maiores harum sed quis! Amet porro cum sunt repudiandae
+      dolore.
+    </Dialog>
+  </Tooltip>
+));

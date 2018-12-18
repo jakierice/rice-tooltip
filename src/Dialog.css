@@ -1,0 +1,5 @@
+[data-rice-tooltip-dialog] {
+  position: fixed;
+  min-height: 20px;
+  min-width: 40px;
+}
